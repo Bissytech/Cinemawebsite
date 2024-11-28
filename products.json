@@ -1,0 +1,87 @@
+[
+    {
+        "id": 1,
+        "name": "Large popcorn-Mixed",
+        "price": 3000,
+        "image": "popcorn-removebg-preview.png"
+
+    },
+    {
+        "id": 2,
+        "name": "Large popcorn-Salt",
+        "price": 3000,
+        "image": "popcorn-removebg-preview.png"
+
+    },
+    {
+        "id": 3,
+        "name": "Large popcorn-Sugar",
+        "price": 3000,
+        "image": "popcorn-removebg-preview.png"
+
+    },
+    {
+        "id": 4,
+        "name": "Medium popcorn-Mixed",
+        "price": 3000,
+        "image": "popcorn-removebg-preview.png"
+
+    },
+    {
+        "id": 5,
+        "name": "Medium popcorn-Salt",
+        "price": 3000,
+        "image": "popcorn-removebg-preview.png"
+
+    },
+    {
+        "id": 6,
+        "name": "Medium popcorn-Sugar",
+        "price": 3000,
+        "image": "popcorn-removebg-preview.png"
+
+    },
+    {
+        "id": 7,
+        "name": "Coca Cola Coke -60cl",
+        "price": 1500,
+        "image": "coca_cola-removebg-preview.png"
+
+    },
+    {
+        "id": 8,
+        "name": "Water -75cl",
+        "price": 1000,
+        "image": "eva-removebg-preview.png"
+
+    },
+    {
+        "id": 9,
+        "name": "Sprite -60cl",
+        "price": 1500,
+        "image": "sprite-removebg-preview.png"
+
+    },
+    {
+        "id": 10,
+        "name": "Pepci -60cl",
+        "price": 1500,
+        "image": "pepsi-removebg-preview.png"
+
+    },
+    {
+        "id": 11,
+        "name": "Fanta orange -60cl",
+        "price": 1500,
+        "image": "p75-removebg-preview.png"
+
+    }
+
+
+    
+   
+    
+   
+    
+]
+

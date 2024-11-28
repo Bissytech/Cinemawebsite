@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="cinema.css">
+   
+<body>
+   <div class="bodyDiv">
+    <nav class="navSection">
+        <div id="navImage"><img src="logo.jpg" alt=""></div>
+        <div class="navHrefs">
+            <a href="index.html">Buy Ticket</a>
+            <a href="aboutUs.html">About Us</a>
+            <a  href="foodtest.html">Food and Drinks</a>
+            <a class="active ? active: inactive" href="Contactus.html">Contact Us</a>
+        </div>
+
+
+    </nav>
+    <h1>CONTACT US</h1>
+    <div class="contactBigDiv">
+<div>
+    <div class="firstLabelDiv">
+        <div class="labelDivvs">
+            <label for="">Name</label>
+            <input type="text">
+        </div>
+        <div class="labelDivvs">
+            <label for="">Email</label>
+            <input type="text">
+        </div>
+    </div>
+    
+    <div class="labelDiv">
+        <label for="">Purpose</label>
+        <input type="text">
+    </div>
+    <div class="labelDivs">
+        <label for="">Message</label>
+        <textarea name="" id=""></textarea>
+    </div>
+</div>
+
+
+<div class="theSubmit">
+    <button>Submit</button>
+</div>
+
+    </div>
+   </div>
+    <div class="footerDiv">
+        <div class="div1">
+            <img src="logo.jpg" alt="">
+        </div>
+        <div class="div2">
+            <div>
+                <h3>IKEJA CINEMA</h3>
+                <p>Jara mall, Simbiat Abiola Way, Ikeja.</p>
+            </div>
+            <div>
+                <h3>IBADAN CINEMA</h3>
+                <p>The Funmo Shopping Mall, Ring Road, Ibadan – Oyo State.</p>
+            </div>
+            <div>
+                <h3>ILORIN CINEMA</h3>
+                <p>The Funmo Shopping Mall, Fate Road Ilorin, Kwara State.</p>
+            </div>
+            <div>
+                <h3>OTA CINEMA</h3>
+                <p>The Funmo Mall, Ota</p>
+            </div>
+            <div>
+                <h3>ENUGU CINEMA</h3>
+                <p>The Funmo Polo-Park mall, Enugu</p>
+            </div>
+        </div>
+
+    </div>
+    <div class="socialMediaIcons">
+        <a href="">
+            <img src="./imagesFolder/facebook.png" alt="">
+
+        </a>
+        <a href="">
+            <img src="./imagesFolder/instagram.png" alt="">
+
+        </a>
+        <a href="">
+            <img src="./imagesFolder/whatsapp.png" alt="">
+
+        </a>
+        <a href="">
+            <img src="./imagesFolder/youtube.png" alt="">
+
+        </a>
+
+        <a href="">
+            <img src="./imagesFolder/twitter.png" alt="">
+
+        </a>
+
+    </div>
+    <div class="policy">
+        <p>2023 © FUNMO Cinemas | All rights reserved.</p>
+    </div>
+</body>
+</html>
+<script>
+
+    let submitButton = document.querySelector('.theSubmit')
+
+    submitButton.addEventListener('click', ()=>{
+        alert('Thanyou for contacting Funmo Cinema.')
+    })
+</script>

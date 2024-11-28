@@ -1,0 +1,519 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.navSection {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.navHrefs a {
+  text-decoration: none;
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  padding: 0 20px;
+}
+.navHrefs a.active {
+  color: red;
+  font-weight: bold;
+}
+
+.navHrefs a:hover {
+  color: orangered;
+}
+
+.toAddPadding {
+  padding: 20px 60px 0 60px;
+}
+
+#navIcons {
+  display: flex;
+
+  gap: 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+#navButtons,
+.theButtons {
+  display: flex;
+
+  gap: 20px;
+}
+
+#navIcons {
+  display: flex;
+  gap: 60px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+#navButtons {
+  display: flex;
+  gap: 20px;
+}
+
+#navButtons button {
+  border-radius: 20px;
+  border: none;
+  width: 100px;
+  padding: 10px;
+  color: white;
+  background-color: #ff515a;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+#navImage img {
+  height: 5em;
+  width: 5em;
+}
+
+.divOne {
+  display: flex;
+}
+
+.divOne img {
+  height: 20em;
+  width: 20em;
+}
+.theButtons button {
+  border: none;
+
+  color: white;
+}
+#moreInfoButton {
+  border-radius: 20px;
+  border: 1px solid black;
+  width: 10em;
+  padding: 10px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  background: none;
+  color: black;
+}
+#bookingsButton {
+  border-radius: 20px;
+  width: 100px;
+  padding: 10px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  background-color: #ff515a;
+}
+#navButtons button {
+  border-radius: 20px;
+  border: none;
+  width: 100px;
+  padding: 10px;
+  color: white;
+  background-color: #ff515a;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+#navImage img {
+  height: 5em;
+
+  width: 5em;
+}
+
+#currentDate {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+}
+.details h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 40px;
+
+  color: white;
+}
+.details span {
+  padding-bottom: 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: white;
+  color: white;
+}
+
+.details p {
+  width: 30%;
+  /* height: 5%; */
+  font-size: 10px;
+  background-color: rgba(0, 0, 0, 0.434);
+  border-radius: 20px;
+  color: white;
+  padding: 20px;
+  box-shadow: 20px;
+}
+
+#availableMovieImage {
+  width: 100%;
+  position: relative;
+}
+
+.smallDiv {
+  display: flex;
+  justify-content: space-around;
+}
+.movieLocations select {
+  width: 15em;
+  height: 3em;
+  padding: 10px;
+  border: 2px solid #ff515a;
+  border-radius: 20px;
+  background-color: #ff515a;
+  color: white;
+}
+
+#viewDate {
+  margin: 30px 20px;
+  width: 120px;
+  padding: 20px;
+}
+#movieImage img {
+  height: 18em;
+  width: 15em;
+  border-radius: 20px;
+}
+.movieDiv {
+  display: flex;
+  gap: 15px;
+  margin-top: 27px;
+}
+
+#theMovieName {
+  font-size: 30px;
+  font-family: "Roboto", sans-serif;
+}
+#theMovieType {
+  color: #ff515a;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+}
+.fourthDiv {
+  display: flex;
+}
+#theMovieDescription {
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  width: 13em;
+}
+.screenTime {
+  padding: 10px;
+  border: 2px solid #ff515a;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  width: 10em;
+  margin-bottom: 5px;
+}
+.screen {
+  color: #ff515a;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+/* #carouselContainer{
+    height: 100vh;
+} */
+#picture img {
+  height: 100px;
+  width: 80px;
+}
+#detailsInnerDiv {
+  height: 50vh;
+  padding: 20px;
+  background-position: center, contain;
+}
+.num {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 50px;
+}
+.numMovieNameDate {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.movieNameDate {
+  line-height: 5px;
+  width: 12em;
+}
+.movieNameDate h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+}
+.cinemaShows {
+  display: flex;
+  grid-area: 10px;
+  border-top: 2px solid rgb(100, 116, 139);
+  width: 23em;
+}
+.sectionFiveInnerDiv {
+  background-size: 10vw 10vh;
+
+  background-repeat: no-repeat;
+}
+.cinMovies {
+  /* position: absolute;  */
+  height: 30em;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  padding-left: 5em;
+}
+.cinMovies::-webkit-scrollbar {
+  display: none;
+}
+.headTwo,
+.smallDiv h5 {
+  padding-left: 5em;
+  color: #808080;
+}
+
+/* stockimages for the index page*/
+.stockimage,
+.SideOneB {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  /* background-color: green; */
+  justify-content: right;
+}
+
+.stockimage {
+  /* background-color: red; */
+  padding-right: 35px;
+  margin-bottom: 10px;
+}
+.stockText {
+  position: absolute;
+}
+.bigImageDiv {
+  padding: 30px;
+}
+
+.divAimage img {
+  width: 20em;
+  border-radius: 20px;
+  opacity: 0.8;
+}
+.divAimage img,
+.SideOneB div img {
+  width: 15em;
+  height: 10em;
+  border-radius: 20px;
+  opacity: 0.8;
+}
+/* .SideOneB{
+        display: flex;
+    } */
+.divBimage img {
+  height: 48em;
+  border-radius: 20px;
+  opacity: 0.8;
+  margin-bottom: 30px;
+}
+.smallImageDiv {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.sideTwo img {
+  height: 60em;
+  border-radius: 20px;
+  opacity: 0.8;
+  /* margin-bottom: 30px; */
+}
+.divAimage,
+.divBimage,
+.SideOneB div,
+.sideTwo div {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: right;
+}
+.bigImageDiv span {
+  color: white;
+  padding: 10px;
+  font-weight: 700;
+}
+.divA p {
+  color: #808080;
+  font-size: 30px;
+  padding: 30px;
+}
+/* .landscape img{
+    width: 100%;
+    height: 20em;
+    opacity: 0.8;  
+} */
+.landscapeDiv {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+.advertText {
+  position: absolute;
+}
+.landscapeDiv img {
+  width: 100%;
+  height: 25em;
+  opacity: 0.8;
+}
+.advertText p {
+  color: #808080;
+  padding: 10px;
+  font-size: 40px;
+  font-weight: 700;
+}
+.advertText button {
+  padding: 20px 80px;
+  border-radius: 10px;
+  background: white;
+  opacity: 0.6;
+}
+.div2 h3 {
+  color: #ff515a;
+  font-weight: 700;
+  padding-bottom: 20px;
+  font-size: 40px;
+}
+.div2 div {
+  padding: 40px;
+}
+.div2 {
+  /* height: 20em; */
+  /* background-color: green; */
+  display: flex;
+  flex-wrap: wrap;
+}
+.div2 p {
+  font-size: 20px;
+  color: #939287;
+  width: 10em;
+}
+.footerDiv {
+  display: flex;
+  align-items: center;
+  background-color: #2d2f36;
+  opacity: 0.8;
+  gap: 5em;
+  /* flex-wrap: wrap; */
+  padding: 0 90px;
+}
+.footerDiv img {
+  height: 150px;
+  width: 150px;
+}
+.socialMediaIcons a img {
+  height: 20px;
+  width: 20px;
+}
+.socialMediaIcons a {
+  text-decoration: none;
+  margin-left: 20px;
+}
+.socialMediaIcons,
+.policy {
+  text-align: center;
+  padding-bottom: 50px;
+  background-color: #2d2f36;
+  opacity: 0.8;
+}
+
+/* ABOUTUS SECTION */
+
+.cinImage img {
+  /* height: 100vh; */
+  width: 80vh;
+}
+.cinImage {
+  display: flex;
+}
+.cinImage div {
+  padding: 40px;
+}
+.theDiv {
+  padding: 40px 40px 40px 0 !important;
+}
+.firstDiv div h3,
+.firstDiv div p {
+  color: #61615c;
+}
+.sectionTwo {
+  padding: 30px 80px 0 80px;
+  color: #61615c;
+}
+h3 {
+  padding-top: 50px;
+  color: #ff515a !important;
+}
+/* CONTACT US PAGE */
+.bodyDiv {
+  padding: 30px 80px 0 80px;
+}
+.labelDivs,
+.labelDiv,
+.labelDivvs {
+  display: flex;
+  flex-direction: column;
+}
+.firstLabelDiv {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+label {
+  color: #61615c;
+  font-size: 30px;
+  padding: 10px 0;
+}
+.labelDivvs input {
+  width: 35em;
+}
+input {
+  height: 3em;
+  border-radius: 10px;
+  padding-bottom: 10px;
+  border: none;
+  border: 1px solid #61615c;
+  color: #61615c;
+
+  padding: 0 14px;
+  outline: none;
+}
+.labelDivs textarea {
+  height: 20em;
+  border: 1px solid #61615c;
+  /* background-color: #61615c; */
+  border-radius: 10px;
+  color: #61615c;
+  padding: 20px 0 0 20px;
+  margin-bottom: 40px;
+  outline: none;
+}
+.theSubmit button {
+  padding: 15px 30px;
+  border-radius: 15px;
+  color: white;
+  border: none;
+  background-color: #ff515a;
+  text-align: center;
+}
+.theSubmit {
+  text-align: center;
+  padding-bottom: 30px;
+}
+/* FOOD AND DRINKS  */

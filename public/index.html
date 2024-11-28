@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+''
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="cinema.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-storage-compat.js"></script>
+  <title>Document</title>
+
+</head>
+
+<body>
+  <main>
+    <nav class="navSection">
+      <div id="navImage"><img src="logo.jpg" alt=""></div>
+      <div class="navHrefs">
+        <a class="active ? active: inactive" href="index.html">Buy Ticket</a>
+        <a href="aboutUs.html">About Us</a>
+        <a  href="foodtest.html">Food and Drinks</a>
+        <a href="Contactus.html">Contact Us</a>
+    </div>
+      <div id="navButtons">
+        <button>Log In</button>
+        <button>Sign Up</button>
+      </div>
+    </nav>
+    <div class="secondDiv">
+      <div id="carouselContainer">
+        <div class="details">
+          <span id="currentDate"></span>
+          <div id="detailsInnerDiv">
+
+          </div>
+          <div class="theButtons"><button id="moreInfoButton">More Information</button><button
+              id="bookingsButton">Bookings</button></div>
+
+
+        </div>
+      </div>
+    </div>
+
+    <div class="thirdDiv">
+      <div class="smallDiv">
+        <h5>Checkout the Movies Showing this Week</h5>
+        <div class="movieLocations">
+          <select name="" id="">
+            <option value="">Our Locations</option>
+            <option value="">FUNMO Ibadan</option>
+            <option value="">FUNMO Ikeja</option>
+            <option value="">FUNMO Lekki</option>
+            <option value="">FUNMO Enugu</option>
+            <option value="">FUNMO Ilorin</option>
+            <option value="">FUNMO Calabar</option>
+          </select>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="sectionFour">
+
+      <div class="fourthDiv">
+
+        <div id="dayOne">
+          <!-- <p id="dayDate"></p>
+          <p id="weekDay"></p> -->
+        </div>
+        <div id="theMovies">
+          <div id="movieDiv">
+
+          </div>
+        </div>
+
+      </div>
+
+      <div class="headTwo">
+        <h5>Showing At The Cinemas</h5>
+      </div>
+
+    </div>
+
+    <div class="sectionFive">
+      <div id="sectionFiveInnerDiv">
+
+        <div class="cinMovies">
+          <div id="garfield" onclick="garfield()" class="cinemaShows">
+            <div id="picture"><img src="garfield.jpg" alt=""></div>
+            <div class="numMovieNameDate"><span class="num">1</span>
+              <div class="movieNameDate">
+                <h3>The Garfield Movie</h3>
+                <p>May 24, 2024</p>
+              </div>
+            </div>
+          </div>
+          <div id="furiosa" onclick="furiosa()" class="cinemaShows">
+            <div id="picture"><img src="furiosa.jpeg" alt=""></div>
+            <div class="numMovieNameDate"><span class="num">2</span>
+              <div class="movieNameDate">
+                <h3>Furiosa: A Mad Max Saga</h3>
+                <p>May 24, 2024</p>
+              </div>
+            </div>
+          </div>
+          <div class="cinemaShows">
+            <div id="picture"><img src="kingdom of planet apes.jpeg" alt=""></div>
+            <div class="numMovieNameDate"><span class="num">3</span>
+              <div class="movieNameDate">
+                <h3>Kingdom of the Planet of Apes</h3>
+                <p>May 10, 2024</p>
+              </div>
+            </div>
+          </div>
+          <div class="cinemaShows">
+            <div id="picture"><img src="M & K.jpeg" alt=""></div>
+            <div class="numMovieNameDate"><span class="num">4</span>
+              <div class="movieNameDate">
+                <h3>Muri and Ko.</h3>
+                <p>June 12, 2024</p>
+              </div>
+            </div>
+          </div>
+          <div class="cinemaShows">
+            <div id="picture"><img src="bad boys.jpeg" alt=""></div>
+            <div class="numMovieNameDate"><span class="num">5</span>
+              <div class="movieNameDate">
+                <h3>Bad Boys: Ride or Die</h3>
+                <p>Jun 07, 2024</p>
+              </div>
+            </div>
+          </div>
+          <div class="cinemaShows">
+            <div id="picture"><img src="inside out 2.jpeg" alt=""></div>
+            <div class="numMovieNameDate"><span class="num">6</span>
+              <div class="movieNameDate">
+                <h3>Inside Out 2</h3>
+                <p>Jun 14, 2024</p>
+              </div>
+            </div>
+          </div>
+          <div class="cinemaShows">
+            <div id="picture"><img src="LAKA.jpeg" alt=""></div>
+            <div class="numMovieNameDate"><span class="num">7</span>
+              <div class="movieNameDate">
+                <h3>LAKATABU</h3>
+                <p>Jun 21, 2024</p>
+              </div>
+            </div>
+          </div>
+          <div class="cinemaShows">
+            <div id="picture"><img src="offshoot.jpeg" alt=""></div>
+            <div class="numMovieNameDate"><span class="num">8</span>
+              <div class="movieNameDate">
+                <h3>Offshoot</h3>
+                <p>Jun 14, 2024</p>
+              </div>
+            </div>
+          </div>
+          <div class="cinemaShows">
+            <div id="picture"><img src="criminal.jpeg" alt=""></div>
+            <div class="numMovieNameDate"><span class="num">9</span>
+              <div class="movieNameDate">
+                <h3>Criminal</h3>
+                <p>May 31, 2024</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="divA">
+        <p>Concessions Package
+          Tickets</p>
+        <div class="bigImageDiv">
+          <div class="stockimage">
+            <div class="divAimage"><img src="./imagesFolder/stockimageone.jpg" alt=""><span class="stockText">Kid's
+                package</span></div>
+            <div class="divAimage"><img src="./imagesFolder/stockimagefive.jpg" alt=""><span class="stockText">Weekend
+                ticket</span></div>
+          </div>
+          <div class="smallImageDiv">
+            <div class="sideOne">
+              <div class="divBimage"><img src="./imagesFolder/stockimagethree.jpg" alt=""><span class="stockText">Friday
+                  ticket</span></div>
+              <div class="SideOneB">
+                <div><img src="./imagesFolder/stockimagefour.jpg" alt=""><span class="stockText">Blockbuster
+                    package</span></div>
+                <div><img src="./imagesFolder/stockimageone.jpg" alt=""><span class="stockText">Weekend family
+                    package</span></div>
+              </div>
+            </div>
+            <div class="sideTwo">
+              <div><img src="./imagesFolder/stockimagethree.jpg" alt=""><span class="stockText">Weekend getaway</span>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="landscapeDiv">
+
+        <img src="./imagesFolder/landscape.jpeg" alt="">
+
+
+        <div class="advertText">
+          <p>RUN YOUR ADVERTISEMENT HERE</p>
+          <button>Contact Us</button>
+        </div>
+      </div>
+      <div class="footerDiv">
+        <div class="div1">
+          <img src="logo.jpg" alt="">
+        </div>
+        <div class="div2">
+          <div>
+            <h3>IKEJA CINEMA</h3>
+            <p>Jara mall, Simbiat Abiola Way, Ikeja.</p>
+          </div>
+          <div>
+            <h3>IBADAN CINEMA</h3>
+            <p>The Funmo Shopping Mall, Ring Road, Ibadan – Oyo State.</p>
+          </div>
+          <div>
+            <h3>ILORIN CINEMA</h3>
+            <p>The Funmo Shopping Mall, Fate Road Ilorin, Kwara State.</p>
+          </div>
+          <div>
+            <h3>OTA CINEMA</h3>
+            <p>The Funmo Mall, Ota</p>
+          </div>
+          <div>
+            <h3>ENUGU CINEMA</h3>
+            <p>The Funmo Polo-Park mall, Enugu</p>
+          </div>
+        </div>
+
+      </div>
+      <div class="socialMediaIcons">
+        <a href="">
+          <img src="./imagesFolder/facebook.png" alt="">
+
+        </a>
+        <a href="">
+          <img src="./imagesFolder/instagram.png" alt="">
+
+        </a>
+        <a href="">
+          <img src="./imagesFolder/whatsapp.png" alt="">
+
+        </a>
+        <a href="">
+          <img src="./imagesFolder/youtube.png" alt="">
+
+        </a>
+       
+        <a href="">
+          <img src="./imagesFolder/twitter.png" alt="">
+
+        </a>
+      
+      </div>
+      <div class="policy">
+        <p>2023 © FUNMO Cinemas | All rights reserved.</p>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>
+<script src="config.js"></script>
+<script src="cinema.js"></script>
