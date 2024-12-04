@@ -1,13 +1,12 @@
 
   const firebaseConfig = {
-    apiKey: "AIzaSyD-gGXcalRrA81TkF3h63U5uZe7orXnBJ8",
-    authDomain: "cinemawebsite-8056d.firebaseapp.com",
-    projectId: "cinemawebsite-8056d",
-    storageBucket: "cinemawebsite-8056d.appspot.com",
-    messagingSenderId: "728829440202",
-    appId: "1:728829440202:web:3bc68d184abd5b79cbc433"
-  };
-
+    apiKey: "AIzaSyDSbWlV77YBfGNYKOdJB9zxu_QApzYQQig",
+  authDomain: "funmo-cinema.firebaseapp.com",
+  projectId: "funmo-cinema",
+  storageBucket: "funmo-cinema.firebasestorage.app",
+  messagingSenderId: "641001887510",
+  appId: "1:641001887510:web:4159f60f732555f53aa237"
+};
   // Initialize Firebase
   const app = firebase.initializeApp(firebaseConfig);
   var provider = new firebase.auth.GoogleAuthProvider();

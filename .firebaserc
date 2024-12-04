@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "cinemawebsite-8056d"
-  }
+    "default": "cinemawebsite-8056d",
+    "staging": "funmo-cinema"
+  },
+  "targets": {},
+  "etags": {}
 }
