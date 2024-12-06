@@ -3,7 +3,12 @@ let theCalender = document.querySelector('.calender')
 const startDate = new Date();
 const days = ['Sun', 'Mon', 'Tues', 'Wed', 'Thur', 'Fri', 'Sat'];
 const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+localStorage.getItem('username')
 
+let disName = document.querySelector('.disName')
+disName.innerHTML = ` Hello,
+${username}
+`
 for (let i = 0; i < 14; i++) {
     const currentDate = new Date(startDate);
     currentDate.setDate(startDate.getDate() + i);
@@ -14,6 +19,7 @@ for (let i = 0; i < 14; i++) {
     console.log(`${dayName}, ${monthName} ${day}`);
 
 
+  
 
 
 const displayDate = document.createElement('div');

@@ -126,3 +126,11 @@ function furiosa(){
     document.getElementById("garfield").style.color = "black"
     
 }
+
+// updated work
+function loginHere() {
+    window.location.href = 'login.html'
+}
+function signupHere() {
+    window.location.href = 'signup.html'
+}
